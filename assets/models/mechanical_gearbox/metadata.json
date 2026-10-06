@@ -1,0 +1,151 @@
+{
+  "id": "mechanical_gearbox",
+  "name": "Precision Constant-Mesh Gearbox",
+  "category": "Mechanical",
+  "description": "Multi-ratio mechanical transmission showing gear mesh pairs, dog teeth, and selector forks.",
+  "root_component_id": "casing",
+  "components": [
+    {
+      "id": "casing",
+      "name": "Cast Aluminum Casing",
+      "category": "Structure",
+      "description": "Rigid split case enclosing gear shafts in lubrication oil bath.",
+      "function": "Locates shaft roller bearings and contains transmission fluid.",
+      "parent": null,
+      "removable": false,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": null,
+      "explosion_distance": 1.5,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#37474f"
+    },
+    {
+      "id": "input_shaft",
+      "name": "Primary Input Shaft",
+      "category": "Drivetrain",
+      "description": "Splined shaft receiving engine input torque.",
+      "function": "Drives countershaft gear cluster.",
+      "parent": "casing",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "explosion_distance": 1.8,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00e5ff"
+    },
+    {
+      "id": "output_shaft",
+      "name": "Secondary Output Shaft",
+      "category": "Drivetrain",
+      "description": "Hardened steel output shaft driving final drive sprocket.",
+      "function": "Delivers chosen gear ratio speed and torque to load.",
+      "parent": "casing",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        -1.2,
+        0.0
+      ],
+      "explosion_distance": 1.8,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#76ff03"
+    },
+    {
+      "id": "selector_fork",
+      "name": "Hardened Shift Selector Fork",
+      "category": "Control",
+      "description": "Bronze-tipped fork riding on shift drum track.",
+      "function": "Slides gear dogs into engagement to lock desired ratio.",
+      "parent": "casing",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "explosion_distance": 2.0,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.6,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ffab00"
+    }
+  ],
+  "learning_steps": [],
+  "quiz_questions": []
+}

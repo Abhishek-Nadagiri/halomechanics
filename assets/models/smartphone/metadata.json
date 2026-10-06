@@ -1,0 +1,187 @@
+{
+  "id": "smartphone",
+  "name": "Quantum 16 Ultra Smartphone",
+  "category": "Electronics",
+  "description": "Ultra-thin flagship smartphone featuring layered modular electronics and thermal dissipation plates.",
+  "root_component_id": "chassis",
+  "components": [
+    {
+      "id": "chassis",
+      "name": "Titanium Mid-Frame Chassis",
+      "category": "Structure",
+      "description": "CNC-milled Grade 5 titanium exoskeleton frame.",
+      "function": "Structural foundation anchoring internal microelectronics and battery.",
+      "parent": null,
+      "removable": false,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": null,
+      "explosion_distance": 1.5,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#263238"
+    },
+    {
+      "id": "display_panel",
+      "name": "LTPO OLED Ultra-Retina Display",
+      "category": "Interface",
+      "description": "120Hz flexible ceramic glass front panel.",
+      "function": "Displays graphics and detects multi-touch input capacitance.",
+      "parent": "chassis",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.0,
+        1.5
+      ],
+      "explosion_distance": 2.0,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00e5ff"
+    },
+    {
+      "id": "battery",
+      "name": "High-Density Solid-State Battery",
+      "category": "Power",
+      "description": "5000mAh silicon-anode battery pack.",
+      "function": "Stores electrical chemical energy for mobile operation.",
+      "parent": "chassis",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        -0.8,
+        -1.2
+      ],
+      "explosion_distance": 1.8,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.3,
+        -0.1
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00e676"
+    },
+    {
+      "id": "logic_board",
+      "name": "Stacked Logic Motherboard",
+      "category": "Computing",
+      "description": "Multi-layer PCB with 3nm neural SoC, RAM, and flash storage.",
+      "function": "Executes system firmware, AI processing, and hardware bus scheduling.",
+      "parent": "chassis",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.8,
+        -1.4
+      ],
+      "explosion_distance": 2.0,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.4,
+        -0.1
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ff1744"
+    },
+    {
+      "id": "camera_array",
+      "name": "Periscope Optical Camera System",
+      "category": "Optics",
+      "description": "Triple camera sensor module with optical image stabilization.",
+      "function": "Captures raw photon sensor data for computational photography.",
+      "parent": "logic_board",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.8,
+        0.8,
+        -1.8
+      ],
+      "explosion_distance": 2.4,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.3,
+        0.5,
+        -0.2
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ffd600"
+    }
+  ],
+  "learning_steps": [],
+  "quiz_questions": []
+}

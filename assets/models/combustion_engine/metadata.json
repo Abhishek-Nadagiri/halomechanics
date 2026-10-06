@@ -1,0 +1,266 @@
+{
+  "id": "combustion_engine",
+  "name": "Four-Stroke Internal Combustion Engine",
+  "category": "Mechanical",
+  "description": "Precision cutaway of a 4-stroke overhead cam single-cylinder engine demonstrating reciprocating kinematics.",
+  "root_component_id": "engine_block",
+  "components": [
+    {
+      "id": "engine_block",
+      "name": "Crankcase Engine Block",
+      "category": "Structure",
+      "description": "Cast iron/aluminum structural block containing cylinder bore and main journal bearings.",
+      "function": "Houses reciprocating piston and rotating crankshaft assembly.",
+      "parent": null,
+      "removable": false,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "explosion_distance": 1.5,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#455a64"
+    },
+    {
+      "id": "cylinder_head",
+      "name": "Cylinder Head Assembly",
+      "category": "Combustion",
+      "description": "Upper chamber enclosing valves, camshaft, and combustion dome.",
+      "function": "Regulates intake air/fuel admission and exhaust scavenging.",
+      "parent": "engine_block",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        1.4,
+        0.0
+      ],
+      "explosion_distance": 1.8,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [
+        "spark_plug",
+        "engine_block"
+      ],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00bcd4"
+    },
+    {
+      "id": "spark_plug",
+      "name": "High-Voltage Spark Plug",
+      "category": "Ignition",
+      "description": "Ceramic insulator body with nickel-alloy ground electrode.",
+      "function": "Ignites compressed air-fuel charge via high-voltage spark arc.",
+      "parent": "cylinder_head",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        2.2,
+        0.0
+      ],
+      "explosion_distance": 2.4,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        1.4,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ff9100"
+    },
+    {
+      "id": "piston",
+      "name": "Reciprocating Piston",
+      "category": "Kinematics",
+      "description": "Lightweight aluminum piston with compression and oil scraper rings.",
+      "function": "Translates combustion gas expansion pressure into linear downward thrust.",
+      "parent": "engine_block",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.8,
+        0.5
+      ],
+      "explosion_distance": 1.6,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00e676"
+    },
+    {
+      "id": "connecting_rod",
+      "name": "H-Beam Connecting Rod",
+      "category": "Kinematics",
+      "description": "Forged steel rod connecting wrist pin to crank journal.",
+      "function": "Converts piston reciprocating linear motion into crankshaft rotation.",
+      "parent": "piston",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.6,
+        -0.3,
+        0.0
+      ],
+      "explosion_distance": 1.8,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.3,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ffd600"
+    },
+    {
+      "id": "crankshaft",
+      "name": "Forged Counterweighted Crankshaft",
+      "category": "Kinematics",
+      "description": "Heat-treated alloy steel shaft with offset crankpins and counterweights.",
+      "function": "Outputs rotary torque to transmission flywheel.",
+      "parent": "engine_block",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        -1.5,
+        0.0
+      ],
+      "explosion_distance": 1.9,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.7,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#e040fb"
+    },
+    {
+      "id": "flywheel",
+      "name": "Inertial Heavy Flywheel",
+      "category": "Kinematics",
+      "description": "Cast steel rotational mass bolted to crankshaft flange.",
+      "function": "Stores kinetic energy to smooth out torque fluctuations between power strokes.",
+      "parent": "crankshaft",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        -1.6,
+        -0.7,
+        0.0
+      ],
+      "explosion_distance": 2.1,
+      "material": "Aluminum Alloy",
+      "common_failure": "Mechanical wear / thermal fatigue",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        -0.8,
+        -0.7,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ff5252"
+    }
+  ],
+  "learning_steps": [],
+  "quiz_questions": []
+}

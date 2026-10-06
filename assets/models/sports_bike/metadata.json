@@ -1,0 +1,473 @@
+{
+  "id": "sports_bike",
+  "name": "2025 Apex Sports Motorcycle",
+  "category": "Automotive",
+  "description": "High-performance supersport 1000cc motorcycle with exposed trellis frame and electronic fuel injection.",
+  "root_component_id": "frame",
+  "components": [
+    {
+      "id": "frame",
+      "name": "Trellis Chassis Frame",
+      "category": "Structure",
+      "description": "High-tensile tubular steel trellis frame providing rigid torsional support.",
+      "function": "Houses and structurally anchors the powertrain, swingarm, and steering assembly.",
+      "parent": null,
+      "removable": false,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "explosion_distance": 1.5,
+      "material": "Chromoly Steel",
+      "common_failure": "Stress fractures under extreme track impacts",
+      "educational_level": "Intermediate",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#37474f"
+    },
+    {
+      "id": "engine",
+      "name": "Inline-4 Engine Block",
+      "category": "Powertrain",
+      "description": "1000cc liquid-cooled dual overhead camshaft powerplant.",
+      "function": "Converts fuel chemical energy into rotational kinetic torque.",
+      "parent": "frame",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "explosion_distance": 1.6,
+      "material": "Cast Aluminum Alloy",
+      "common_failure": "Head gasket leak / thermal warping",
+      "educational_level": "Beginner",
+      "connected_components": [
+        "frame",
+        "spark_plug",
+        "air_filter",
+        "exhaust"
+      ],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.2,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00e5ff"
+    },
+    {
+      "id": "fuel_tank",
+      "name": "Pressurized Fuel Cell",
+      "category": "Fuel System",
+      "description": "Aerodynamic fuel tank with internal high-pressure swirl pot and pump.",
+      "function": "Safely stores combustible gasoline and feeds the rail injectors.",
+      "parent": "frame",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        1.2,
+        0.4
+      ],
+      "explosion_distance": 1.8,
+      "material": "Composite Polymer",
+      "common_failure": "Internal sender unit corrosion",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.7,
+        0.2
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ff1744"
+    },
+    {
+      "id": "battery",
+      "name": "Lithium-Iron Battery",
+      "category": "Electrical",
+      "description": "12V lightweight lithium starter accumulator with BMS.",
+      "function": "Supplies starter current and stabilizes the electrical harness.",
+      "parent": "frame",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        -1.2,
+        0.5,
+        0.0
+      ],
+      "explosion_distance": 2.0,
+      "material": "LiFePO4",
+      "common_failure": "Cell imbalance / deep discharge",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        -0.3,
+        0.2,
+        -0.1
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ffea00"
+    },
+    {
+      "id": "air_filter",
+      "name": "High-Flow Air Filter",
+      "category": "Intake",
+      "description": "Multi-layer cotton gauze intake filter assembly.",
+      "function": "Traps particulate contaminants before air enters intake manifolds.",
+      "parent": "engine",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.9,
+        0.6
+      ],
+      "explosion_distance": 1.9,
+      "material": "Cotton / Oiled Mesh",
+      "common_failure": "Particulate clogging and power starvation",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.3,
+        0.3
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#76ff03"
+    },
+    {
+      "id": "spark_plug",
+      "name": "Iridium Spark Plug",
+      "category": "Ignition",
+      "description": "Fine-wire iridium tip center electrode spark plug.",
+      "function": "Generates 25,000V electric spark arc to ignite compressed fuel-air mixture.",
+      "parent": "engine",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.8,
+        0.8,
+        0.4
+      ],
+      "explosion_distance": 2.2,
+      "material": "High-Alumina Ceramic & Iridium",
+      "common_failure": "Carbon fouling / gap erosion",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.2,
+        0.1,
+        0.1
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#00b0ff"
+    },
+    {
+      "id": "exhaust",
+      "name": "Titanium Exhaust Header & Muffler",
+      "category": "Exhaust",
+      "description": "Hydroformed 4-into-1 titanium tuned exhaust system.",
+      "function": "Expels combustion gases, muffles acoustic pressure waves, and scavenges cylinders.",
+      "parent": "engine",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        -1.0,
+        -1.2
+      ],
+      "explosion_distance": 1.8,
+      "material": "Grade 1 Titanium",
+      "common_failure": "Weld fatigue from thermal cycling",
+      "educational_level": "Intermediate",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.6,
+        -0.8
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ffd600"
+    },
+    {
+      "id": "front_wheel",
+      "name": "Front Forged Wheel & Tire",
+      "category": "Running Gear",
+      "description": "17-inch lightweight forged aluminum wheel with sticky radial rubber.",
+      "function": "Provides directional steering traction and gyroscopic stability.",
+      "parent": "frame",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.0,
+        1.8
+      ],
+      "explosion_distance": 2.2,
+      "material": "Forged 6061 Aluminum",
+      "common_failure": "Rim denting / bead leakage",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.5,
+        1.4
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#2979ff"
+    },
+    {
+      "id": "rear_wheel",
+      "name": "Rear Drive Wheel & Tire",
+      "category": "Running Gear",
+      "description": "17x6.0-inch rear wheel receiving drive torque.",
+      "function": "Transfers engine propulsion torque to tarmac.",
+      "parent": "frame",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        0.0,
+        -1.8
+      ],
+      "explosion_distance": 2.2,
+      "material": "Forged Aluminum",
+      "common_failure": "Tread delamination / uneven wear",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        -0.5,
+        -1.4
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#2979ff"
+    },
+    {
+      "id": "brakes",
+      "name": "Radial Monobloc Brake Calipers",
+      "category": "Braking",
+      "description": "Dual 330mm floating drilled discs with 4-piston radial monobloc calipers.",
+      "function": "Converts rotational kinetic energy into heat through friction braking.",
+      "parent": "front_wheel",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        1.2,
+        0.0,
+        1.2
+      ],
+      "explosion_distance": 2.0,
+      "material": "Sintered Friction Compound & Cast Aluminum",
+      "common_failure": "Brake pad glazing / rotor warping",
+      "educational_level": "Beginner",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.3,
+        -0.4,
+        1.3
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#ff3d00"
+    },
+    {
+      "id": "suspension",
+      "name": "Inverted Upside-Down (USD) Front Forks",
+      "category": "Suspension",
+      "description": "43mm fully-adjustable nitrogen-charged cartridge forks.",
+      "function": "Damps road irregularities and manages pitch dynamics during cornering.",
+      "parent": "frame",
+      "removable": true,
+      "movement_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explosion_vector": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "explosion_distance": 1.7,
+      "material": "Hard-Anodized Aluminum",
+      "common_failure": "Fork oil seal breach",
+      "educational_level": "Intermediate",
+      "connected_components": [],
+      "constraint": null,
+      "local_position": [
+        0.0,
+        0.2,
+        1.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color_hex": "#c51162"
+    }
+  ],
+  "learning_steps": [
+    {
+      "step_number": 1,
+      "component_id": "fuel_tank",
+      "instruction": "Remove the fuel tank to access electrical harness and upper intake.",
+      "required_gesture": "PINCH",
+      "explanation": "Disconnect quick-release fuel couplings and electrical sender harness."
+    },
+    {
+      "step_number": 2,
+      "component_id": "battery",
+      "instruction": "Disconnect and remove the lithium battery.",
+      "required_gesture": "PINCH",
+      "explanation": "Always isolate negative ground lead first to prevent accidental short circuits."
+    },
+    {
+      "step_number": 3,
+      "component_id": "air_filter",
+      "instruction": "Extract the intake air filter element.",
+      "required_gesture": "PINCH",
+      "explanation": "Inspect pleats for debris ingress or airflow restriction."
+    },
+    {
+      "step_number": 4,
+      "component_id": "spark_plug",
+      "instruction": "Unthread the iridium spark plug from cylinder 1.",
+      "required_gesture": "PINCH",
+      "explanation": "Examine electrode color to diagnose combustion stoichiometry (rich vs lean)."
+    },
+    {
+      "step_number": 5,
+      "component_id": "engine",
+      "instruction": "Detrend engine mounting bolts and pull the powertrain assembly.",
+      "required_gesture": "PULL_APART",
+      "explanation": "Supporting the engine cradle allows comprehensive bench inspection."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "q1",
+      "question": "Which component produces the high-voltage electrical arc to ignite the compressed mixture?",
+      "options": [
+        "Fuel Tank",
+        "Spark Plug",
+        "Lithium Battery",
+        "Air Filter"
+      ],
+      "correct_index": 1,
+      "explanation": "The Spark Plug receives high ignition coil voltage and arcs across its gap to initiate combustion."
+    },
+    {
+      "id": "q2",
+      "question": "Why is the battery disconnected before major powertrain servicing?",
+      "options": [
+        "To save battery juice",
+        "To avoid electrical shorts and accidental cranking",
+        "To cool the engine",
+        "To reset tire pressure"
+      ],
+      "correct_index": 1,
+      "explanation": "Isolating the electrical source prevents sparks near fuel vapors and unintended starter motor activation."
+    }
+  ]
+}
